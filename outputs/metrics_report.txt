@@ -1,0 +1,61 @@
+=================================================================
+TASK 1: SPAM CLASSIFIER - MODEL EVALUATION REPORT
+=================================================================
+
+SIDE-BY-SIDE METRICS COMPARISON:
+Metric          | Multinomial NB (nb)    | Logistic Regression (lr)
+-----------------------------------------------------------------
+Accuracy        | 0.9758                 | 0.9680                  
+Precision       | 1.0000                 | 0.9804                  
+Recall          | 0.8092                 | 0.7634                  
+F1              | 0.8945                 | 0.8584                  
+-----------------------------------------------------------------
+BEST MODEL IDENTIFIED: Naive Bayes (MultinomialNB) (Higher F1-Score: 0.8945)
+
+=================================================================
+DETAILED REPORT: MULTINOMIAL NAIVE BAYES (NB)
+=================================================================
+Metrics:
+  Accuracy: 0.9758
+  Precision: 1.0000
+  Recall: 0.8092
+  F1: 0.8945
+
+Confusion Matrix:
+  TN: 901, FP: 0
+  FN: 25, TP: 106
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Not Spam       0.97      1.00      0.99       901
+        Spam       1.00      0.81      0.89       131
+
+    accuracy                           0.98      1032
+   macro avg       0.99      0.90      0.94      1032
+weighted avg       0.98      0.98      0.97      1032
+
+
+=================================================================
+DETAILED REPORT: LOGISTIC REGRESSION (LR)
+=================================================================
+Metrics:
+  Accuracy: 0.9680
+  Precision: 0.9804
+  Recall: 0.7634
+  F1: 0.8584
+
+Confusion Matrix:
+  TN: 899, FP: 2
+  FN: 31, TP: 100
+
+Classification Report:
+              precision    recall  f1-score   support
+
+    Not Spam       0.97      1.00      0.98       901
+        Spam       0.98      0.76      0.86       131
+
+    accuracy                           0.97      1032
+   macro avg       0.97      0.88      0.92      1032
+weighted avg       0.97      0.97      0.97      1032
+
